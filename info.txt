@@ -1,0 +1,15 @@
+
+o GET all
+curl -X GET localhost:3000/workings
+
+o POST
+curl -X POST localhost:3000/workings \
+-H "Content-Type: application/json" \
+-d '{"title": "This is a title", "description": "This is the description of this is a title object", "link": "donot.have", "status": "hidden"}'
+
+o PUT
+curl -X PUT localhost:3000/workings/3 \
+-d '{"title": "New title", "description": "New description", "link": "stillno.one", "status": "available"}' \
+-H "Content-Type: application/json"
+
+
