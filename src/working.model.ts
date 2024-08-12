@@ -6,9 +6,16 @@ export class Working {
 	description: string;
 	link: string;
 	status: WorkingStatus;
+	image?: StoredFile
 }
 
 export enum WorkingStatus {
 	HIDDEN = "hidden",
 	VISIBLE = "visible",
+}
+
+export class StoredFile {
+	filename: string;
+	data: Buffer;
+	mimetype: string;
 }
