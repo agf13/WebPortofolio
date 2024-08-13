@@ -12,4 +12,5 @@ curl -X PUT localhost:3000/workings/3 \
 -d '{"title": "New title", "description": "New description", "link": "stillno.one", "status": "available"}' \
 -H "Content-Type: application/json"
 
-
+o Upload file (implicitly referring to images as well)
+curl -F 'image=@/home/user/Pictures/images.png' localhost:3000/workings/1/image
